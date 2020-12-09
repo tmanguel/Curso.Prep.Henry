@@ -14,9 +14,9 @@ function crearUsuario() {
     this.nombre = opciones.nombre
     this.email = opciones.email
     this.password = opciones.password
-    this.saludar = function (){
-      return "Hola, mi nombre es " + this.nombre ;
-    }
+  }
+  Usuario.prototype.saludar = function (){
+    return "Hola, mi nombre es " + this.nombre 
   }
   return Usuario
 }
@@ -41,7 +41,6 @@ function agregarStringInvertida() {
     var newString = ""
     for (i = this.length - 1 ; i >= 0 ; i--) {
       newString = newString + this.charAt(i)
-
     }
     return newString
   }
